@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= yield_content(:title) %></title>
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <!-- <link rel="icon" href="/assets/favicon.ico"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/crisper.css">  
+
+  <style type="text/css">
+    body {
+      padding-top: 60px; /* when using navbar-top-fixed */
+      background-image:url('/img/footer_lodyas.png');
+    }
+  </style>
+
+    <style>
+
+  </style>
+
+</head>
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+  <script src="/js/demo.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

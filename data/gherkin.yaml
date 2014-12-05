@@ -1,0 +1,35 @@
+---
+- :regex: !ruby/regexp /^I can run GUI tests$/
+  :substitutions: 
+- :regex: !ruby/regexp /^I use Sikuli$/
+  :substitutions: 
+- :regex: !ruby/regexp /^I click on "(.*?)"$/
+  :substitutions: image
+- :regex: !ruby/regexp /^I hover on player$/
+  :substitutions: 
+- :regex: !ruby/regexp /^I hover on "(.*?)"$/
+  :substitutions: image
+- :regex: !ruby/regexp '/^"(.*?)" displays(?: \(accuracy: (.*?)\))?$/'
+  :substitutions: image, accuracy
+- :regex: !ruby/regexp /^content is (playing|paused)$/
+  :substitutions: state
+- :regex: !ruby/regexp /^I am viewing (embedded|fullscreen) player$/
+  :substitutions: view
+- :regex: !ruby/regexp /^correct tooltip appears for <control>$/
+  :substitutions: table
+- :regex: !ruby/regexp /^correct tooltip appears for each advert_control$/
+  :substitutions: 
+- :regex: !ruby/regexp /^"(.*?)" is removed$/
+  :substitutions: image
+- :regex: !ruby/regexp /^I (play|pause) VOD (.*?) in (embedded|fullscreen) player$/
+  :substitutions: action, media, view
+- :regex: !ruby/regexp /^playback resumes correctly$/
+  :substitutions: 
+- :regex: !ruby/regexp /^I activate player controls$/
+  :substitutions: 
+- :regex: !ruby/regexp '/^Pause(?: to take screenshot)?$/'
+  :substitutions: 
+- :regex: !ruby/regexp /^timeline tooltip appears for timeline control$/
+  :substitutions: 
+- :regex: !ruby/regexp /^I drag volume_bar (up|down)$/
+  :substitutions: direction
